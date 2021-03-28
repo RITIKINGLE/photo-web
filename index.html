@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+         <title>Deja vu </title>
+         <link rel="stylesheet" href="css/style.css">
+         <meta name="viewport" content="width=width-device">
+         <link rel="preconnect" href="https://fonts.gstatic.com">
+         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100&display=swap" rel="stylesheet">
+
+    <section class="header">
+        <div class="header-text">
+            <h1>Photo studio</h1>
+            <p>Style your image with us</p>
+         
+            <div class="header-button">
+                <a href="#"><span></span>Find out</a>
+                <a href="#"><span></span>Read more</a>
+            </div>
+        </div>    
+    </section>
+        
+        <div id="menuBar">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">RESOURCE</a></li>
+                    <li><a href="#">FEATURES</a></li>
+                    <li><a href="#">TESTIMONIALS</a></li>
+                    <li><a href="#">MEET US</a></li>
+
+                </ul>
+            </nav>    
+        </div>
+        
+
+        <div id="menuBtn">
+            <img src="images/menu.png" id="menu">
+        </div>
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var menuBar = document.getElementById("menuBar")
+    var menu = document.getElementById("menu")
+
+menuBar.style.right="-200px";   
+
+    menuBtn.onclick = function(){
+        if(menuBar.style.right=="-200px"){
+            menuBar.style.right="0";
+            menu.src="images/close.png"
+        }
+        else{
+            menuBar.style.right="-200px";
+            menu.src="images/menu.png"
+
+        }
+    }
+
+</script>
+
+
+
+</body>
+</html>
