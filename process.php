@@ -2,30 +2,29 @@
 
     if(isset($_POST['btn-send']))
     {
-        $userName = $_POST['UName'];
+        $UserName = $_POST['UName'];
         $Email = $_POST['Email'];
-        $Phone = $_POST['Phone'];
-        $Question = $_POST['Question'];
+        $Number = $_POST['Number'];
         $Msg = $_POST['Msg'];
 
-        if(empty($userName)) || empty($Email) || empty($Number) || empty($Message))
+        if(empty($UName)) || empty($Email) || empty($Number) || empty($Message))
 
         {
-            header('location:ritik.php?error');
+            header('location:index.html?error');
         }
         else
         {
             $to = "ritikingle.9689@gmail.com";
 
-            if(mail($to,$Phone,$Message,$Email,$Question))
+            if(mail($to,$Number,$Message,$Email,$Message))
             {
-                header("location:ritik.php?success");
+                header("location:index.html?success");
             }
         }
     }    
     else
     {
-        header("location:ritik.php");
+        header("location:index.html");
     }
 
 ?>
