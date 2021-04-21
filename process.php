@@ -7,24 +7,24 @@
         $Number = $_POST['Number'];
         $Msg = $_POST['Msg'];
 
-        if(empty($UName)) || empty($Email) || empty($Number) || empty($Message))
+        if(empty($UName)) || empty($Email) || empty($Number) || empty($Msg))
 
         {
-            header('location:index.html?error');
+            header('location:index.php?error');
         }
         else
         {
-            $to = "ritikingle.9689@gmail.com";
+            $to = "bullsimpacts@gmail.com";
 
-            if(mail($to,$Number,$Message,$Email,$Message))
+            if(mail($to,$Number,$Msg,$Email))
             {
-                header("location:index.html?success");
+                header("location:index.php?success");
             }
         }
     }    
     else
     {
-        header("location:index.html");
+        header("location:index.php");
     }
 
 ?>

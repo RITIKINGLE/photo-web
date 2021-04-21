@@ -203,7 +203,7 @@
                         <input type="text" name="UName" placeholder="UserName" class="form-control mb-2">
                         <input type="Email" name="Email" placeholder="Email" class="form-control mb-2">          
                         <input type="text" name="Number" placeholder="Contact number" class="form-control mb-2">          
-                        <textarea name="msg" placeholder="Message" class="form-control mb-2"></textarea>
+                        <textarea name="Msg" placeholder="Message" class="form-control mb-2"></textarea>
                         <button class="btn btn-success" name="btn-send">Send</button>          
 
                     </form>   

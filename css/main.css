@@ -493,7 +493,7 @@ list-style-type:none;
 .social{
         width: 1400px;
         height: 50vh;
-        text-align: center;
+        text-align:center;
         max-width:1400px;
         margin:auto;  
         background: black;
@@ -504,20 +504,24 @@ list-style-type:none;
             font-weight:lighter;
             font-size:60px;
             color:aquamarine;
-            
+           
             padding-top:30px;
             margin-bottom: 0;
 
 }
 .social ul li{
                 display: inline-block;
-                margin:30px 10px;
+                margin:30px 7px;
                 font-size: 30px;
-                padding:10px 13px;
+                padding:8px 16px;
                 color:#f3946f;
                 border:1px solid #8a8a8a;
-                border-radius: 25%;
+                border-radius: 50%;
                 list-style: none;
+                
+}
+.social ul{
+    margin-right:30px;
 }
 .social ul li i{
     color:aquamarine;
