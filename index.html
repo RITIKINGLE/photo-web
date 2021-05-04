@@ -20,12 +20,12 @@
                                    
                     </div>
                     <div class="card-body">
-                    <form class="contact-form" action="form.php" method="POST">
-                         
-                        <input type="text" name="UName"  placeholder="UserName" class="form-control mb-2"  > 
-                        <input type="Email" name="Email" placeholder="Email" class="form-control mb-2">       
-                            <input type="text" name="Number" placeholder="Contact number" class="form-control mb-2">         
-                                <textarea name="msg" placeholder="Message"  class="form-control mb-2"></textarea>   
+                    <form class="contact-form" >
+                          
+                        <input type="text" name="UName"  placeholder="UserName" class="form-control mb-2" id="Name"  > 
+                        <input type="Email" name="Email" placeholder="Email" class="form-control mb-2" id="Email">       
+                        <input type="text" name="Number" placeholder="Contact number" class="form-control mb-2" id="Number">         
+                        <textarea name="msg" placeholder="Message"  class="form-control mb-2" id="Message"></textarea>   
                                 <button class="btn btn-success"   name="btn-send" >Send</button>         
                            
                     </form>   
@@ -35,6 +35,6 @@
             </div>
         </div>
     </div>
-   
-     
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase.js"></script> 
+    <script src="app.js "></script>
 </body>
